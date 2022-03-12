@@ -7,7 +7,7 @@
 >>>* `computer.ico`:消息框图标  
 >>>* `fake_useragent_0.1.11.json`:fake_useragent库的请求头文件，如果没有的话调用"UserAgent().random"时可能会报错    
 
->[GetLessonTable](/GetLessonTable):广东石油化工学院教务系统当周课表获取，GUI界面由PyQt5实现。
+>[GetLessonTable](/GetLessonTable):从广东石油化工学院教务系统获取用户当周课表，GUI界面由PyQt5实现。
 >>* [`GetLessonTable.py`](/GetLessonTable/GetLessonTable.py):源码  
 >>* `computer.ico`：程序图标  
 >>* `GetLessonTable.exe`:源码通过Pyinstaller打包而成的exe可执行程序    
