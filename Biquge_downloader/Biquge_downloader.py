@@ -130,6 +130,7 @@ class DownloadThread(QThread):
             AllSectionLink = r.xpath('//div[@id="list"]/dl/dt[2]/following::dd/a/@href')
             for link in AllSectionLink:
                 self.AllSectionLink.append((AllSectionLink.index(link)+1,"https://www.biqooge.com" + link))
+            # 总章节数通过信号发送给UI主线程用以设置进度条
             self.total_signal.emit(len(self.AllSectionLink))
             pool = ThreadPoolExecutor(self.ThreadNum)
             while len(self.AllSectionLink) != 0:
@@ -138,6 +139,7 @@ class DownloadThread(QThread):
                 self.lock2.release()
                 pool.submit(DownLoad,Section)
             pool.shutdown()
+            # 章节排序
             self.AllSection = sorted(self.AllSection.items(),key=lambda item:item[0])
             with open(self.saveplace + self.novelname + ".txt","w",encoding="utf-8") as f:
                 for i in self.AllSection:
