@@ -11,4 +11,3 @@
 >>* [`GetLessonTable.py`](/GetLessonTable/GetLessonTable.py):源码  
 >>* `computer.ico`：程序图标  
 >>* `GetLessonTable.exe`:源码通过Pyinstaller打包而成的exe可执行程序    
- 
