@@ -5,7 +5,7 @@
 >>* [`resource`](/Biquge_downloader/resource/):资源文件  
 >>>* `Bookshelf.ico`:程序图标  
 >>>* `computer.ico`:消息框图标  
->>>* `fake_useragent_0.1.11.json`:fake_useragent库的请求头文件  
+>>>* `fake_useragent_0.1.11.json`:fake_useragent库的请求头文件，如果没有的话fake_useragent库可能会报错  
 
 >[GetLessonTable](/GetLessonTable):广东石油化工学院教务系统当周课表获取，GUI界面由PyQt5实现。
 >>* [`GetLessonTable.py`](/GetLessonTable/GetLessonTable.py):源码  
