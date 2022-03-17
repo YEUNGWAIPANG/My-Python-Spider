@@ -106,6 +106,7 @@ class spider:
             pool.submit(self.download,book[0],book[1])
         pool.shutdown()
         self.save()
+        self.db.close()
 
 if __name__ == "__main__":
     if os.path.exists("taskdata.db"):
