@@ -81,8 +81,10 @@ class spider:
 
     def send(self,sectionID,content):
         subject = "《" + self.bookname + "》  第" + str(sectionID) +"章"
-        qq = yagmail.SMTP(user="2946706968@qq.com",password="xvuhotgrmfocdgae",host="smtp.qq.com",smtp_ssl = True)
-        qq.send(to="2946706968@qq.com",subject=subject,contents=content)
+	    # user填写自己的邮箱,password填写自己的邮箱的授权码，授权码获取自行参考各个邮箱，host填写所用邮箱服务器host(如qq邮箱的smtp.qq.com)
+        email = yagmail.SMTP(user="",password="",host="",smtp_ssl = True)
+	    # to：接收的邮箱。可以与发送邮箱一样。
+        email.send(to="",subject=subject,contents=content)
 
     def save(self):
         self.alldownloadedsection = sorted(self.alldownloadedsection.items(),key=lambda item:item[0]) # 返回一个元组，元组里面又是每个章节的元组
