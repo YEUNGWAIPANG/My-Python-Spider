@@ -81,9 +81,9 @@ class spider:
 
     def send(self,sectionID,content):
         subject = "《" + self.bookname + "》  第" + str(sectionID) +"章"
-	    # user填写自己的邮箱,password填写自己的邮箱的授权码，授权码获取自行参考各个邮箱，host填写所用邮箱服务器host(如qq邮箱的smtp.qq.com)
+	# user填写自己的邮箱,password填写自己的邮箱的授权码，授权码获取自行参考各个邮箱，host填写所用邮箱服务器host(如qq邮箱的smtp.qq.com)
         email = yagmail.SMTP(user="",password="",host="",smtp_ssl = True)
-	    # to：接收的邮箱。可以与发送邮箱一样。
+	# to：接收的邮箱。可以与发送邮箱一样。
         email.send(to="",subject=subject,contents=content)
 
     def save(self):
