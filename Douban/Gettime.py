@@ -17,6 +17,3 @@ def TurnTime(Totalsecond):
     minute = (Totalsecond - hour * 3600) // 60
     second = Totalsecond - hour * 3600 - minute * 60
     return str(hour) + ":" + str(minute).zfill(2) + ":" + str(second).zfill(2)
-
-if __name__ == "__main__":
-    print(gettime())
