@@ -91,8 +91,8 @@ ITEM_PIPELINES = {
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 nowtime = gettime()
-MySQL_host = "119.91.196.15"
+MySQL_host = "" # 服务器的公网IP。
 MySQL_port = 3306
 MySQL_user = "root"
-MySQL_password = "20001115"
+MySQL_password = "" #root用户密码
 MySQL_database = "dangdang"
