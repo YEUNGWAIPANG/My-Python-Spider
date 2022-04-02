@@ -1,4 +1,0 @@
-Faker==13.3.2
-lxml==4.5.2
-requests==2.24.0
-yagmail==0.14.256
